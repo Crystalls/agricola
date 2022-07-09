@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{{ url_for( 'static', filename='faq.css', v=1)}}"/>
+	<link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='harvest.png') }}">
+	<title>Agricola - Вопросы и Ответы</title>
+</head>
+<body>
+<div class="intro">
+	<header class="header">
+		<div class="container">
+			<div class="header_in">
+					<div class="titlegame">Agricola</div>
+						<ul>
+							<li><a href="/home" class="bloom">Главная</a></li>
+							<li><a href="/wiki" class="bloom">Вики</a></li>
+							<li><a href="/blog" class="bloom">Блог</a></li>
+							<li><a href="/faq" class="bloom">Вопросы и Ответы</a></li>
+						</ul>		
+			</div>
+		</div>	</header>
+</div>
+	<div class="post">
+		<h2>Что такое проект Agricola и для чего он необходим?</h2>
+			<p>Данный проект - симулятор фермера, со своей экономикой и своими механиками. Эта игра должна помочь студентам и ученикам специализации Агрономия в их обучении.</p>
+		<h2>На какие платформы выходит игра?</h2>
+			<p>Пока что мы портируем игру только для персонального компьютера.</p>
+		
+		<h2>На каком языке написана игра?</h2>
+			<p>Agricola написана на языке C++</p>
+		
+		<h2>Какие языки поддерживает игра?</h2>
+			<p>В настоящее время она поддерживает только Русский язык.</p>
+		
+		<h2>Где можно узнать о грядущих обновлениях?</h2>
+			<p>Самые свежие новости вы можете посмотреть в <a href="/blog" class="support">нашем блоге</a>, либо же на <a href="https://discord.gg/yYFrnDsJHM" class="support" target="_blank">канале дискорда</a>.</p>
+		
+		<h2>Я могу участвовать в разработке игры с командой?</h2>
+			<p>Конечно, если вы хотите помочь с разработкой - <a href="mailto:drdry62002@gmail.com" class="support" target="_blank">свяжитесь с нами</a>. </p>		
+		
+		<h2>У меня возникли проблемы с игрой, куда я могу обратиться?</h2>
+			<p>Вы можете написать на <a href="/forum" class="support">форум</a> игры, либо связаться с нами при помощи <a href="mailto:drdry62002@gmail.com" class="support" target="_blank">электронной почты</a>.</p>
+			<iframe src="https://discord.com/widget?id=920723231567147018&theme=dark" width="250" height="200" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+	</div>
+</body>
+</html>

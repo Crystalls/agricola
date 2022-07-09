@@ -1,0 +1,177 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Philosopher;
+	font-style: normal;
+	font-weight: normal;
+	background: rgba(251, 216, 122, 1);
+	background: url('/static/img/bg1.jpg') no-repeat fixed center center / cover;
+}
+
+
+html {
+overflow-x: hidden;
+overflow-y: scroll;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/*Настройка скроллбара*/
+/*Регулировка ширины*/
+::-webkit-scrollbar {
+  width: 7px;
+}
+/*Создание тени для полосы прокрутки*/
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2);
+  background-color: white;
+}
+
+/*Стилизация индикатора прокрутки*/
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background: linear-gradient(180deg, #795bab, #52849f);
+}
+
+/*Стилизация навигационного меню*/
+.header_in{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	max-height: 150px;
+
+}
+
+
+/*Стилизация кнопок*/
+ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+li {
+	list-style: none;
+	font-size: 20px;
+	text-transform: uppercase;
+	margin: 40px;
+	user-select: none;
+
+	
+}
+/*Эффекты для текста при наведении*/
+a {
+	list-style: none;
+	text-decoration: none;
+	color: black;
+}
+
+
+li a {
+  list-style: none;
+  display: inline-block;
+  font-weight: 700;
+  position: relative;
+ 	padding-bottom: 5px;
+}
+
+
+li a:after {
+  content: "";
+  border-bottom: 2px solid #e8793e;
+  display: block;
+  width: 0px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform:  scaleX(0);
+}
+
+
+li a.bloom::after {
+  content: "";
+  display: block;
+  width: 0px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform:  scaleX(0);
+	box-shadow: 0 0 25px 8px rgba(233, 150, 122, 0.5);
+}
+
+
+li a:hover:after {
+  width: 100%;
+  left: 0;
+  transition: all .5s linear;
+  transform: scaleX(1);
+}
+
+.titlegame {
+	font-size: 100px;
+	color: #fbd87a;
+	text-transform: uppercase;
+	text-shadow: #000 2px 0 0px, #000 0 2px 0px, #000 -2px 0 0px, #000 0 -2px 0px;
+}
+
+
+
+/*Стилизация блока блога*/
+.post {
+	display: block;
+	width: 1100px;
+	height: 100%;
+	background-color: white;
+	align-items: center;
+	margin: 0 auto;
+	margin-top: 150px;
+	border: solid 10px transparent;
+	border-radius: 10px;
+	border-image: linear-gradient(180deg, #52849f, #795bab);
+	border-image-slice: 1; /*Растягивание градиента на всю обводку*/
+	padding: 20px;
+	background: #fce7ac;
+	line-height: 1;
+}
+
+.title {
+    font-size: 36px;
+    color: black;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.post_verst {	
+	padding-left: 30px;
+}
+
+hr {
+	margin: 20px;
+	height: 6px;
+	border: none;
+	background: linear-gradient(45deg, #52849f, #795bab);
+}
+
+.btn_exp {
+	border-radius: 5px;
+	background-color: #ff7e00;
+	color: white;
+	height: 40px;
+	width: 130px;
+	font-weight: bold;
+	border: none;
+	cursor: pointer;
+}
+
+.btn_exp:hover {
+	filter: brightness(70%);
+}
+
+.btns {
+ display: flex;
+ padding-left: 30px;
+ margin-top: 20px;
+
+}

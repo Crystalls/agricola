@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" 
+	content="width=device-width, initial-scale=1, maximum-scale=1 user-scalable=yes">
+	<link rel="stylesheet" href="{{ url_for( 'static', filename='main.css', v=1)}}"/>
+	<link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='harvest.png') }}">
+	<title>Agricola</title>
+
+</head>
+<body>
+<div class="parent">
+	<section class="intros">
+		<div class="parentintro">	
+			<div class="intro">
+				<header class="header">
+					<div class="container">
+						<div class="header_in">
+							<div class="logpic"><img src="{{ url_for('static', filename='logo.png') }}" height="230px" width="230px"></div>
+								<ul>
+									<li><a href="/home" id="nav" class="bloom">Главная</a></li>
+									<li><a href="/wiki" id="nav" class="bloom">Вики</a></li>
+									<li><a href="/blog" id="nav" class="bloom">Блог</a></li>
+									<li><a href="/faq" id="nav" class="bloom">Вопросы и Ответы</a></li>
+								</ul>		
+						</div>
+					</div>
+				</header>
+
+				
+				<div class="title">AGRICOLA</div>
+				<div class="btn"><a href="/download" id="btnid"><button class="btnstyle"><div>Скачать игру</div></button></a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+<section class="about">
+<div class="container2">
+		
+		<div class="textabout" align="center">
+			<div class="bordertop"></div>
+				Данная игра создана для обучения агрономов по профильным предметам. В игре присутствуют механики магазина и квестовых заданий. В будущем планируется добавление новых материалов и механик.
+			<div class="borderbot">		
+		</div>
+			</div>
+			<div class="titlegame" align="center">Игровой процесс</div>
+						
+		<div class="gameplay">
+			<a href="{{ url_for('static', filename='1.jpg') }}">
+				<div class="img_bg">
+					<img src="{{ url_for('static', filename='1.jpg') }}" class="foc">
+				</div>
+			</a>
+			<a href="{{ url_for('static', filename='2.jpg') }}">	
+				<div class="img_bg">
+					<img src="{{ url_for('static', filename='2.jpg') }}" class="foc">
+				</div>
+			</a>
+			<a href="{{ url_for('static', filename='3.jpg') }}">
+				<div class="img_bg">
+					<img src="{{ url_for('static', filename='3.jpg') }}" class="foc">
+				</div>
+			</a>
+		</div>					
+</div>
+</section>
+
+<section class="gamepl">
+<div class="container3">
+	<div class="features" align="center">Особенности игры</div>
+		<div align="center">
+			<ul class="featuresul">
+				<li class="featuresli">
+					<span class="colorli">Создайте ферму которую всегда хотели:</span> Покупайте семена и выращивайте из них разнообразные растения!
+				</li>
+				<li class="featuresli">
+					<span class="colorli">Занимайтесь экономикой:</span> Торгуйте с жителями городка!
+				</li>
+				<li class="featuresli">
+					<span class="colorli">Развивайтесь по вашему усмотрению:</span> Ухаживайте за своим огородом, общайтесь с жителями или исследуйте мир.
+				</li>		
+			</ul>
+		</div>
+</div>
+</section>
+
+
+<footer class="footer">
+	<div class="footr">
+		<div class="footertitle">Связь с нами
+			<div class="footerdecr">Вы можете связаться с командой разработчиков 	при помощи социальных сетей.</div></div>
+				<div class="btnfooter">
+					<a href="#"><button class="buttonSN">
+						<p class="textbtn">Telegram</p>
+				</button></a>
+					<a href="https://discord.gg/yYFrnDsJHM" target="_blank"><button class="buttonSN">
+						<p class="textbtn">Discord</p>
+				</button></a>
+					<a href="mailto:drdry62002@gmail.com " target="_blank"><button class="buttonSN">
+				<p class="textbtn">Email</p>
+			</button></a>
+		</div>
+	</div>		
+			<div class="copy">Agricola Copyright © 2022</div>
+		<div class="policy"><a href="#">Политика приватности</a> | <a href="#">Условия пользования</a></div>
+	</footer>
+
+</div>
+</body>
+</html>

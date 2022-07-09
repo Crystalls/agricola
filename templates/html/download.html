@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{{ url_for( 'static', filename='download.css', v=1)}}"/>
+	<link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='harvest.png') }}">
+	<title>Скачивание игры Agricola</title>
+</head>
+<body>
+<header class="header">
+		<div class="container">
+			<div class="header_in">
+					<div class="titlegame">Agricola</div>
+						<ul>
+							<li><a href="/home">Главная</a></li>
+							<li><a href="/wiki">Вики</a></li>
+							<li><a href="/blog">Блог</a></li>
+							<li><a href="/faq">Вопросы и Ответы</a></li>
+						</ul>
+			</div>
+		</div>	
+	</header>
+
+<section class="downloading">
+	<div class="download_block">
+		<div class="texts">
+			<h1>Спасибо за загрузку!</h1>
+			<p>Для начала нажмите на <a href="/static/Agricola.rar" download="" class="link">ЗАГРУЗИТЬ</a></p>
+		</div>
+		<hr>
+		<h2 align="center">Инструкция по установке</h2>
+		<hr>
+		<ul class="tutorial">
+			<li class="tutorial_item">
+				<div class="img_tutorial step1">
+				</div>
+			</li>
+				<p class="tutorial_text">1. Нажмите на ссылку загрузки и выберите папку</p>
+			
+			<li class="tutorial_item">
+				<div class="img_tutorial step2"></div>
+			</li>
+				<p class="tutorial_text">2. Дождитесь окончания загрузки</p>
+			<li class="tutorial_item">
+				<div class="img_tutorial step3"></div>
+			</li>
+				<p class="tutorial_text">3. Запустите загруженный файл и следуйте инструкциям</p>
+		</ul>
+	</div>
+</section>
+</body>
+</html>

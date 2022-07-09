@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{{ url_for( 'static', filename='wiki.css', v=1)}}"/>
+	<link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='harvest.png') }}">
+	<title>Agricola - Вопросы и Ответы</title>
+</head>
+<body>
+<div class="intro">
+	<header class="header">
+		<div class="container">
+			<div class="header_in">
+					<div class="titlegame">Agricola</div>
+						<ul>
+							<li><a href="/home" class="bloom">Главная</a></li>
+							<li><a href="/wiki" class="bloom">Вики</a></li>
+							<li><a href="/blog" class="bloom">Блог</a></li>
+							<li><a href="/faq" class="bloom">Вопросы и Ответы</a></li>
+						</ul>
+			</div>
+		</div>	
+	</header>
+</div>
+<div class="post">
+	<table class="wikitable" width="100%">
+		<tbody>
+		   	<tr>
+		   		<th>Об игре</th>
+		   	</tr>
+		   		<tr>
+		   			<td class="aboutsection">
+		   				<p>
+		   					Современные технологии достигли такого уровня, что постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает актуальность направлений прогрессивного развития. Принимая во внимание показатели успешности, высокое качество позиционных исследований говорит о возможностях своевременного выполнения сверхзадачи. Современные технологии достигли такого уровня, что экономическая повестка сегодняшнего дня создаёт предпосылки для существующих финансовых и административных условий.
+		   				</p>
+		   			</td>
+		   		</tr>
+		   		<tr>
+		   		<td>
+		   			<div class="mainsection">
+		   				<div class="singlesection" id="single">
+		   					<table class="wikitable" id="mainsection">
+		   						<tbody>
+		   							<tr>
+		   								<th>Основы</th>
+		   							</tr>
+		   							<tr>
+		   								<td>
+		   									<div class="wikiblock">
+		   										<img src="{{ url_for('static', filename='wheat.png') }}" class="imgsize">
+		   										<a href="/home" class="wiki">Начало игры</a>
+		   									</div>
+		   									<div class="wikiblock">
+		   										<img src="{{ url_for('static', filename='game.png') }}" class="imgsize">
+		   										<a href="/home" class="wiki">Управление</a>
+		   									</div>
+		   								</td>
+		   							</tr>
+		   						</tbody>
+		   					</table>	
+		   				</div>
+		   				<div class="singlesection" id="single">
+		   					<table class="wikitable" id="mainsection">
+		   						<tbody>
+		   							<tr>
+		   								<th>Предметы</th>
+		   							</tr>
+		   							<tr class="">
+		   								<td>
+											<div class="wikiblock">
+		   										<img src="/static/img/fa/Tools/Hoe.png" class="imgsize">
+		   										<a href="/home" class="wiki">Инструменты</a>
+		   									</div>
+		   									<div class="wikiblock">
+		   										<img src="/static/img/fa/Tools/Seed Bag.png" class="imgsize">
+		   										<a href="/home" class="wiki">Прочие инструменты</a>
+		   									</div>
+		   								</td>
+		   							</tr>
+		   						</tbody>
+		   					</table>
+		   				</div>
+		   				<div class="doublesection" id="double">
+		   					<table class="wikitable" id="mainsection">
+		   						<tbody>
+		   							<tr>
+		   								<th>Персонажи</th>
+		   							</tr>
+		   							<tr>
+		   								<td>
+
+		   								</td>
+		   							</tr>
+		   						</tbody>
+		   					</table>
+		   				</div>
+		   			</div>
+		   		</td>
+		   		</tr>
+
+		   </tbody>
+  		</table>
+	</div>
+</body>
+</html>

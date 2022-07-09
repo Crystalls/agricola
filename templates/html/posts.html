@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{{ url_for( 'static', filename='posts.css', v=1)}}"/>
+	<link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='harvest.png') }}">
+	<title>{{article.title}}</title>
+	{{ moment.include_moment() }}
+	{{ moment.lang('ru') }}
+</head>
+<body>
+<div class="intro">
+	<header class="header">
+		<div class="container">
+			<div class="header_in">
+					<div class="titlegame">Agricola</div>
+						<ul>
+							<li><a href="/home" class="bloom">Главная</a></li>
+							<li><a href="/wiki" class="bloom">Вики</a></li>
+							<li><a href="/blog" class="bloom">Блог</a></li>
+							<li><a href="/faq" class="bloom">Вопросы и Ответы</a></li>
+						</ul>
+			</div>
+		</div>
+	</header>
+</div>
+
+
+		<div class="post">
+			<div class="post_verst">
+				<div class="title">{{ article.title }}</div>
+				<div class="text">{{ article.text }}</div>
+				<a href="/blog"><button class="btn_back">Назад</button></a>
+				<div class="date">Дата добавления: {{ moment(article.date).format('LL') }}</div>
+			</div>
+		</div>
+</body>
+</html>

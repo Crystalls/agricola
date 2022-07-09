@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{{ url_for( 'static', filename='create-article.css', v=1)}}"/>
+	<link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='harvest.png') }}">
+	<title>Agricola - Создание статьи</title>
+</head>
+<body>
+<div class="intro">
+	<header class="header">
+		<div class="container">
+			<div class="header_in">
+						<ul>
+							<li><a href="/home" class="bloom">Главная</a></li>
+							<li><a href="/wiki" class="bloom">Вики</a></li>
+							<li><a href="/blog" class="bloom">Блог</a></li>
+							<li><a href="/faq" class="bloom">Вопросы и Ответы</a></li>
+							<li><a href="/create-article" class="bloom">Создание статьи</a></li>
+						</ul>
+			</div>
+		</div>
+	</header>
+</div>
+	<hr>
+
+	<div class="container">
+		<h1>Добавление статьи</h1>
+		<form method="post">
+			<input type="text" name="title" id="title" class="forms" placeholder="Введите название"><br>
+			<input type="text" name="intro" id="intro" class="forms" placeholder="Введите краткое содержание"><br>
+			<textarea name="text" id="text" class="forms" placeholder="Введите основной текст"></textarea><br>
+			<input type="submit" value="Отправить" class="butthon_success"><br>
+		</form>
+
+	</div>
